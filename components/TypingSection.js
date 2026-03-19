@@ -83,8 +83,8 @@ export default function TypingSection() {
         </div>
 
         <p className="text-slate-400 text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-          AutoTact handles it automatically - so you stop losing hours to admin
-          that doesn't need a human touch.
+          AutoTact handles it for you - so the hours you used to spend on admin
+          go back to your actual day.
         </p>
 
         <Link href="/enquiries" className="btn-accent text-base px-9 py-4 inline-block">

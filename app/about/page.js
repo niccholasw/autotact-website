@@ -17,7 +17,7 @@ const values = [
   {
     title: 'We care if it actually works',
     description:
-      "After we go live, we check in. Not once - regularly. If something's not firing correctly or you've changed how you work, we fix it. You're not buying a product and getting left alone.",
+      "After we go live, we keep checking in. If something's not firing correctly or you've changed how you work, we fix it. You're not handed a product and left to figure it out.",
     accent: 'border-l-accent',
   },
 ]
@@ -62,11 +62,10 @@ export default function AboutPage() {
               <p className="text-ink-3 leading-relaxed mb-5">
                 We're a small NZ team. We sit down with you, learn how your business actually runs -
                 not how a textbook says it should - and build something that fits your real workflow.
-                Not a template. Not a cookie-cutter system.
+                Something built around how you work, not the other way around.
               </p>
               <p className="text-ink-3 leading-relaxed mb-8">
-                When you need support, you're talking to someone based here. Not a chatbot, not an overseas
-                call centre. A Kiwi who picked up the phone.
+                When you need support, you're talking to someone based here. A Kiwi who picked up the phone.
               </p>
               <Link href="/enquiries" className="btn-primary inline-block">
                 Talk to us
@@ -91,7 +90,7 @@ export default function AboutPage() {
               </div>
               <div className="pt-4 border-t border-rule flex gap-8">
                 <div>
-                  <p className="text-2xl font-bold text-ink">50+</p>
+                  <p className="text-2xl font-bold text-ink">5+</p>
                   <p className="text-xs text-ink-3 mt-0.5">businesses automated</p>
                 </div>
                 <div>
@@ -135,13 +134,13 @@ export default function AboutPage() {
                 A small team with a very specific focus
               </h2>
               <p className="text-ink-3 leading-relaxed mb-5">
-                We're not a generalist software agency that also does automation. This is all we do.
-                We've spent years learning what actually works for trades businesses and bookkeeping practices
-                in New Zealand - the tools they use, the way their days run, the admin that kills their evenings.
+                Automation is all we do. We've spent years learning what actually works for trades businesses
+                and bookkeeping practices in New Zealand - the tools they use, the way their days run,
+                the admin that kills their evenings.
               </p>
               <p className="text-ink-3 leading-relaxed">
-                That focus means we can move fast, speak your language, and build things that don't
-                need a manual to operate.
+                Because of that, we move quickly, explain things in plain terms, and build things
+                you won't need a manual to operate.
               </p>
             </div>
             <div>

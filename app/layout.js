@@ -8,9 +8,9 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: 'AutoTact - AI Automation for NZ Businesses',
+  title: 'AutoTact - Admin Automation for NZ Tradies and Bookkeepers',
   description:
-    'AutoTact helps NZ tradies and bookkeepers automate their admin with AI - save 10+ hours a week on invoicing, quotes, scheduling, and more. 100% NZ based.',
+    'AutoTact sets up invoicing, follow-up, and scheduling automations for NZ tradies and bookkeepers. 100% NZ based, live within days.',
   keywords: [
     'AI automation NZ',
     'tradie admin automation',
@@ -20,8 +20,8 @@ export const metadata = {
   ],
   authors: [{ name: 'AutoTact' }],
   openGraph: {
-    title: 'AutoTact - AI Automation for NZ Businesses',
-    description: 'Stop doing admin. Start growing. AI-powered automation for NZ tradies and bookkeepers.',
+    title: 'AutoTact - Admin Automation for NZ Tradies and Bookkeepers',
+    description: 'AutoTact handles the invoicing, reminders, and scheduling so NZ tradies and bookkeepers can stop working evenings.',
     type: 'website',
     locale: 'en_NZ',
   },

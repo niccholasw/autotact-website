@@ -5,12 +5,7 @@ import Navbar from '../../components/Navbar'
 
 const businessTypes = [
   { value: '', label: 'What kind of business?' },
-  { value: 'tradie-plumber', label: 'Tradie - Plumber' },
-  { value: 'tradie-electrician', label: 'Tradie - Electrician' },
-  { value: 'tradie-builder', label: 'Tradie - Builder' },
-  { value: 'tradie-landscaper', label: 'Tradie - Landscaper' },
-  { value: 'tradie-other', label: 'Tradie - Other' },
-  { value: 'bookkeeper', label: 'Bookkeeper' },
+  { value: 'tradie', label: 'Tradie' },
   { value: 'accountant', label: 'Accountant' },
   { value: 'other', label: 'Something else' },
 ]
