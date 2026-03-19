@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #0f172a;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .gradient-text {
+    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .card-hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(15, 23, 42, 0.05), 0 12px 32px rgba(15, 23, 42, 0.1);
+  }
+
+  .btn-primary {
+    background: #0f172a;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 0.75rem 1.75rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    text-align: center;
+    transition: background 0.2s ease, transform 0.15s ease;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.12);
+  }
+
+  .btn-primary:hover {
+    background: #1e293b;
+    transform: translateY(-1px);
+  }
+
+  .btn-secondary {
+    border: 1.5px solid #cbd5e1;
+    color: #0f172a;
+    font-weight: 600;
+    padding: 0.75rem 1.75rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    text-align: center;
+    transition: border-color 0.2s ease, background 0.2s ease, transform 0.15s ease;
+  }
+
+  .btn-secondary:hover {
+    border-color: #94a3b8;
+    background: #f8fafc;
+    transform: translateY(-1px);
+  }
+
+  .btn-accent {
+    background: #2563eb;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 0.75rem 1.75rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    text-align: center;
+    transition: background 0.2s ease, transform 0.15s ease;
+  }
+
+  .btn-accent:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+  }
+}
+
+/* Form inputs - light theme */
+.form-input {
+  background: #ffffff;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 0.5rem;
+  color: #0f172a;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  outline: none;
+  font-size: 0.9375rem;
+}
+
+.form-input::placeholder {
+  color: #94a3b8;
+}
+
+.form-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f8fafc; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+/* Dot pattern for hero sections */
+.dot-pattern {
+  background-image: radial-gradient(#e2e8f0 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
+}
