@@ -1,10 +1,17 @@
-import { Inter } from 'next/font/google'
+import { Inter, Roboto_Slab } from 'next/font/google'
+import TransitionLayout from '../components/TransitionLayout'
 import './globals.css'
 
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter',
+})
+
+const robotoSlab = Roboto_Slab({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-roboto-slab',
 })
 
 export const metadata = {
@@ -29,9 +36,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en-NZ" className={inter.variable}>
+    <html lang="en-NZ" className={`${inter.variable} ${robotoSlab.variable}`}>
       <body className="bg-background text-ink antialiased min-h-screen">
-        {children}
+        <TransitionLayout>{children}</TransitionLayout>
       </body>
     </html>
   )

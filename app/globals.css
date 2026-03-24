@@ -7,111 +7,126 @@ html {
 }
 
 body {
-  background-color: #ffffff;
-  color: #0f172a;
+  background-color: #121218;
+  color: #f0f0f5;
   font-family: var(--font-inter), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-roboto-slab), Georgia, serif;
+}
+
 @layer utilities {
   .gradient-text {
-    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+    background: linear-gradient(135deg, #3b82f6 0%, #a78bfa 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .card-hover {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   }
 
   .card-hover:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 6px rgba(15, 23, 42, 0.05), 0 12px 32px rgba(15, 23, 42, 0.1);
+    transform: translateY(-2px);
+    border-color: #44445a;
   }
 
   .btn-primary {
-    background: #0f172a;
-    color: #ffffff;
+    background: #f0f0f5;
+    color: #121218;
     font-weight: 600;
     padding: 0.75rem 1.75rem;
-    border-radius: 0.5rem;
+    border-radius: 9999px;
     display: inline-block;
     text-align: center;
     transition: background 0.2s ease, transform 0.15s ease;
-    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.12);
+    letter-spacing: -0.01em;
   }
 
   .btn-primary:hover {
-    background: #1e293b;
+    background: #e0e0ea;
     transform: translateY(-1px);
   }
 
   .btn-secondary {
-    border: 1.5px solid #cbd5e1;
-    color: #0f172a;
+    border: 1px solid #3a3a4c;
+    color: #f0f0f5;
     font-weight: 600;
     padding: 0.75rem 1.75rem;
-    border-radius: 0.5rem;
+    border-radius: 9999px;
     display: inline-block;
     text-align: center;
     transition: border-color 0.2s ease, background 0.2s ease, transform 0.15s ease;
+    letter-spacing: -0.01em;
   }
 
   .btn-secondary:hover {
-    border-color: #94a3b8;
-    background: #f8fafc;
+    border-color: #6a6a80;
+    background: rgba(255, 255, 255, 0.04);
     transform: translateY(-1px);
   }
 
   .btn-accent {
-    background: #2563eb;
+    background: #3b82f6;
     color: #ffffff;
     font-weight: 600;
     padding: 0.75rem 1.75rem;
-    border-radius: 0.5rem;
+    border-radius: 9999px;
     display: inline-block;
     text-align: center;
     transition: background 0.2s ease, transform 0.15s ease;
+    letter-spacing: -0.01em;
   }
 
   .btn-accent:hover {
-    background: #1d4ed8;
+    background: #2563eb;
     transform: translateY(-1px);
+  }
+
+  .eyebrow {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #7a7a90;
   }
 }
 
-/* Form inputs - light theme */
+/* Form inputs */
 .form-input {
-  background: #ffffff;
-  border: 1.5px solid #cbd5e1;
+  background: #1a1a22;
+  border: 1px solid #2a2a36;
   border-radius: 0.5rem;
-  color: #0f172a;
+  color: #f0f0f5;
   padding: 0.75rem 1rem;
   width: 100%;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
   outline: none;
   font-size: 0.9375rem;
+  color-scheme: dark;
 }
 
 .form-input::placeholder {
-  color: #94a3b8;
+  color: #5a5a6e;
 }
 
 .form-input:focus {
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
 }
 
 /* Scrollbar */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #f8fafc; }
-::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #1a1a22; }
+::-webkit-scrollbar-thumb { background: #35354a; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #5a5a6e; }
 
-/* Dot pattern for hero sections */
+/* Dot pattern — subtle on obsidian */
 .dot-pattern {
-  background-image: radial-gradient(#e2e8f0 1.5px, transparent 1.5px);
-  background-size: 28px 28px;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
 }
