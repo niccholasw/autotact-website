@@ -1341,9 +1341,6 @@ video {
 .p-8 {
   padding: 2rem;
 }
-.p-20 {
-  padding: 5rem;
-}
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1833,8 +1830,29 @@ h1, h2, h3, h4, h5, h6 {
 /* ── Dot pattern ────────────────────────────────────────── */
 
 .dot-pattern {
-  background-image: radial-gradient(rgb(var(--c-overlay) / 0.04) 1px, transparent 1px);
-  background-size: 32px 32px;
+  background-image:
+    radial-gradient(rgb(var(--c-overlay) / 0.04) 1px, transparent 1px),
+    linear-gradient(180deg, rgb(var(--c-surface-deep)) 0%, transparent 80%);
+  background-size: 32px 32px, 100% 100%;
+  background-repeat: repeat, no-repeat;
+}
+
+/* ── Section depth ──────────────────────────────────────── */
+
+.section-glow {
+  background: linear-gradient(180deg, rgb(var(--c-surface-deep) / 0.5) 0%, transparent 100%);
+}
+
+[data-theme="light"] .dot-pattern {
+  background-image:
+    radial-gradient(rgb(0 0 0 / 0.035) 1px, transparent 1px),
+    linear-gradient(180deg, #d0d1dc 0%, transparent 70%);
+  background-size: 32px 32px, 100% 100%;
+  background-repeat: repeat, no-repeat;
+}
+
+[data-theme="light"] .section-glow {
+  background: linear-gradient(180deg, #dddde8 0%, transparent 100%);
 }
 
 .hover\:border-accent:hover {

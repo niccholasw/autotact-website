@@ -128,7 +128,7 @@ export default function HomePage() {
       <TypingSection />
 
       {/* How it works */}
-      <section className="py-28 border-t border-rule">
+      <section className="py-28 border-t border-rule section-glow">
         <div className="max-w-7xl mx-auto px-6">
           <Reveal variant="fade-up">
             <div className="mb-16">
@@ -155,7 +155,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="border-t border-rule py-28">
+      <section className="border-t border-rule py-28 section-glow">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <Reveal variant="fade-up">
             <p className="eyebrow mb-6">Ready to start?</p>

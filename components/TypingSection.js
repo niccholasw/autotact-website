@@ -86,7 +86,7 @@ export default function TypingSection() {
   }
 
   return (
-    <section ref={sectionRef} className="border-t border-rule py-28 px-6 overflow-hidden">
+    <section ref={sectionRef} className="border-t border-rule py-28 px-6 overflow-hidden section-glow">
       <div className="max-w-4xl mx-auto text-center">
         <p className="eyebrow mb-10" {...anim(0, 0.7)}>Sound familiar?</p>
 

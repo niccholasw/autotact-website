@@ -55,7 +55,7 @@ export default function AboutPage() {
       </section>
 
       {/* Story */}
-      <section className="py-28 border-t border-rule">
+      <section className="py-28 border-t border-rule section-glow">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-20 items-start">
             <div>
@@ -129,7 +129,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-28 border-t border-rule">
+      <section className="py-28 border-t border-rule section-glow">
         <div className="max-w-7xl mx-auto px-6">
           <Reveal variant="fade-up">
             <p className="eyebrow mb-6">How we work</p>
@@ -149,7 +149,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="py-28 border-t border-rule">
+      <section className="py-28 border-t border-rule section-glow">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
