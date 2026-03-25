@@ -51,12 +51,12 @@ export default function AutomationVisual() {
                     className={`w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold shrink-0 transition-all duration-500 ${
                       isHighlighted
                         ? 'bg-accent/15 text-accent border border-accent/30'
-                        : 'bg-surface-2 text-[#3a3a4c] border border-rule'
+                        : 'bg-surface-2 text-muted border border-rule'
                     }`}
                   >
                     {isHighlighted ? '✓' : (i + 1)}
                   </div>
-                  <span className={`text-sm font-sans transition-colors duration-500 ${isHighlighted ? 'text-ink-2' : 'text-[#3a3a4c]'}`}>
+                  <span className={`text-sm font-sans transition-colors duration-500 ${isHighlighted ? 'text-ink-2' : 'text-muted'}`}>
                     {step.label}
                   </span>
                   {i === activeStep && (
@@ -78,7 +78,7 @@ export default function AutomationVisual() {
             <div className="w-1.5 h-1.5 rounded-full bg-[#22c55e]" style={{ animation: 'pulse 2s ease-in-out infinite' }} />
             <span className="text-[11px] text-muted font-sans">Automated — no action needed</span>
           </div>
-          <span className="text-[10px] text-[#3a3a4c] font-mono font-sans">autotact</span>
+          <span className="text-[10px] text-muted font-mono font-sans">autotact</span>
         </div>
       </div>
 
@@ -101,7 +101,7 @@ export default function AutomationVisual() {
           </div>
           <div>
             <p className="text-[10px] text-ink-2 font-sans font-medium">Invoice sent</p>
-            <p className="text-[9px] text-muted font-sans">INV-0047 — Dave's Plumbing</p>
+            <p className="text-[9px] text-muted font-sans">INV-0047 — Beans Delivery</p>
           </div>
         </div>
       </div>

@@ -14,7 +14,7 @@ const values = [
   {
     title: 'Plain English, always',
     description:
-      "We don't talk about APIs, webhooks, or workflow orchestration unless you want to. We explain what we're building in terms of your actual day — 'when you finish a job in ServiceM8, your invoice goes out automatically.' That's it.",
+      "We don't talk about APIs, webhooks, or workflow orchestration unless you want to. We explain what we're building in terms of your actual day — 'when you close out the till, your end-of-day report goes out automatically.' That's it.",
   },
   {
     title: 'We care if it actually works',
@@ -25,7 +25,7 @@ const values = [
 
 export default function AboutPage() {
   return (
-    <div className="bg-background min-h-screen">
+    <div className="min-h-screen">
       <Navbar />
 
       {/* Hero */}
@@ -46,7 +46,7 @@ export default function AboutPage() {
           </Reveal>
           <Reveal variant="fade-up" delay={0.35} duration={0.9}>
             <p className="text-xl text-ink-3 max-w-2xl leading-relaxed">
-              AutoTact started because we kept running into the same story — a plumber who was brilliant on the tools
+              AutoTact started because we kept running into the same story — a cafe owner who made incredible coffee
               but spent every Sunday night at the kitchen table doing admin. A bookkeeper managing ten clients
               who was manually chasing every single payment reminder.
             </p>
@@ -68,7 +68,7 @@ export default function AboutPage() {
               <Reveal variant="fade-up" delay={0.1}>
                 <p className="text-ink-3 leading-relaxed mb-5">
                   Large companies have had automated billing, scheduling, and follow-up systems for years.
-                  But the people selling those tools weren't talking to one-man trades operations or solo bookkeepers
+                  But the people selling those tools weren't talking to busy cafe owners or solo bookkeepers
                   in Hamilton. They were talking to enterprise IT departments.
                 </p>
               </Reveal>
@@ -98,7 +98,7 @@ export default function AboutPage() {
                       "I didn't know anything about automation software. I just told them what was taking up my time,
                       and they sorted it. Now I barely think about invoicing."
                     </p>
-                    <p className="text-sm font-semibold text-ink">Dave T. — Auckland Plumber</p>
+                    <p className="text-sm font-semibold text-ink">Dave T. — Auckland Cafe Owner</p>
                   </div>
                   <div className="bg-background p-8">
                     <p className="text-ink-3 text-sm leading-relaxed italic mb-4">
@@ -161,8 +161,8 @@ export default function AboutPage() {
               </Reveal>
               <Reveal variant="fade-up" delay={0.1}>
                 <p className="text-ink-3 leading-relaxed mb-5">
-                  Automation is all we do. We've spent years learning what actually works for trades businesses
-                  and bookkeeping practices in New Zealand — the tools they use, the way their days run,
+                  Automation is all we do. We've spent years learning what actually works for small hospitality
+                  businesses and bookkeeping practices in New Zealand — the tools they use, the way their days run,
                   the admin that kills their evenings.
                 </p>
               </Reveal>

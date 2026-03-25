@@ -12,7 +12,7 @@ const steps = [
     number: '01',
     title: '20-minute call',
     description:
-      'We ask about your week — what tools you use, which tasks eat your evenings, and where the frustration is. No pitch, just listening.',
+      'We ask about your week: what tools you use, which tasks eat your evenings, and where the frustration is. No pitch, just listening.',
   },
   {
     number: '02',
@@ -28,53 +28,20 @@ const steps = [
   },
 ]
 
-const stats = [
-  {
-    value: '5+',
-    label: 'NZ businesses',
-    icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M3 21h18" />
-        <path d="M5 21V7l8-4v18" />
-        <path d="M19 21V11l-6-4" />
-        <path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01" />
-      </svg>
-    ),
-  },
-  {
-    value: '~12 hrs',
-    label: 'saved per week, on average',
-    icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="12" r="10" />
-        <polyline points="12 6 12 12 16 14" />
-      </svg>
-    ),
-  },
-  {
-    value: '4.9 / 5',
-    label: 'client rating',
-    icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-      </svg>
-    ),
-  },
-  {
-    value: 'No',
-    label: 'lock-in contracts',
-    icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-        <polyline points="9 12 11 14 15 10" />
-      </svg>
-    ),
-  },
+const logos = [
+  { src: '/images/6907cf3ffa6875df88abcfd0_ChatGPT.png', alt: 'ChatGPT' },
+  { src: '/images/6907cf4ccb6fdcb5d986576d_Copilot.png', alt: 'Copilot' },
+  { src: '/images/6907cf4c51da5a551b6c784b_Gemini.png', alt: 'Gemini' },
+  { src: '/images/6907d1164b30dfaa6bc91bcf_Glean WIDE.png', alt: 'Glean' },
+  { src: '/images/6907cf4c016fe09d35b3bae4_Claude.png', alt: 'Claude' },
+  { src: '/images/6907cf4c61a39922df825583_Looker.png', alt: 'Looker' },
+  { src: '/images/6907cf4c71cefe15bc055860_Autohive.png', alt: 'Autohive' },
+  { src: '/images/6907cf4c25d3d4f912df79a3_N8N.png', alt: 'N8N' },
 ]
 
 export default function HomePage() {
   return (
-    <div className="bg-background min-h-screen">
+    <div className="min-h-screen">
       <Navbar />
 
       {/* Hero — split layout */}
@@ -101,8 +68,9 @@ export default function HomePage() {
 
               <Reveal variant="fade-up" delay={0.35} duration={0.9}>
                 <p className="text-lg md:text-xl text-ink-3 max-w-lg mb-10 leading-relaxed">
-                  AutoTact automates the invoicing, follow-ups, and scheduling that eat your evenings —
-                  so you can actually knock off when the job is done.
+                  AutoTact automates the boring stuff eating 3-4 hours a day - think invoicing, follow-ups, and scheduling.
+                  You should focus on what really matters.
+                  
                 </p>
               </Reveal>
 
@@ -134,57 +102,27 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="relative border-t border-rule border-b border-rule bg-surface-deep py-16 overflow-hidden">
-        {/* Parallax gear background */}
-        <Parallax speed={-0.12} className="absolute inset-0 pointer-events-none">
-          <div className="absolute inset-0" style={{ opacity: 0.045 }}>
-            {/* Large gear — top-right */}
-            <svg className="absolute -top-16 -right-12 w-[320px] h-[320px] text-accent animate-[spin_40s_linear_infinite]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-              <circle cx="50" cy="50" r="22" />
-              <circle cx="50" cy="50" r="8" />
-              {[0,30,60,90,120,150,180,210,240,270,300,330].map(a => (
-                <rect key={a} x="46" y="26" width="8" height="12" rx="2" transform={`rotate(${a} 50 50)`} fill="currentColor" stroke="none" />
+      {/* Logo strip */}
+      <section className="border-t border-rule border-b border-rule bg-surface-deep py-14">
+        <div className="max-w-7xl mx-auto px-6">
+          <Reveal variant="fade-up" duration={0.7}>
+            <p className="text-center text-sm text-muted mb-10">
+              Powered by industry-leading AI and automation platforms
+            </p>
+          </Reveal>
+          <Reveal variant="fade-up" delay={0.15} duration={0.9}>
+            <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 md:gap-x-14">
+              {logos.map(({ src, alt }) => (
+                <img
+                  key={alt}
+                  src={src}
+                  alt={alt}
+                  className="h-9 md:h-11 w-auto object-contain opacity-60 hover:opacity-100 transition-all duration-300 grayscale hover:grayscale-0 logo-invert"
+                />
               ))}
-            </svg>
-            {/* Medium gear — bottom-left */}
-            <svg className="absolute -bottom-10 -left-8 w-[220px] h-[220px] text-accent animate-[spin_30s_linear_infinite_reverse]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.2">
-              <circle cx="50" cy="50" r="20" />
-              <circle cx="50" cy="50" r="7" />
-              {[0,40,80,120,160,200,240,280,320].map(a => (
-                <rect key={a} x="46" y="27" width="8" height="11" rx="2" transform={`rotate(${a} 50 50)`} fill="currentColor" stroke="none" />
-              ))}
-            </svg>
-            {/* Small gear — center-left */}
-            <svg className="absolute top-6 left-[18%] w-[140px] h-[140px] text-accent animate-[spin_25s_linear_infinite]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5">
-              <circle cx="50" cy="50" r="18" />
-              <circle cx="50" cy="50" r="6" />
-              {[0,45,90,135,180,225,270,315].map(a => (
-                <rect key={a} x="47" y="29" width="6" height="10" rx="1.5" transform={`rotate(${a} 50 50)`} fill="currentColor" stroke="none" />
-              ))}
-            </svg>
-            {/* Tiny gear — right of center */}
-            <svg className="absolute bottom-4 right-[28%] w-[100px] h-[100px] text-accent animate-[spin_20s_linear_infinite_reverse]" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.8">
-              <circle cx="50" cy="50" r="18" />
-              <circle cx="50" cy="50" r="6" />
-              {[0,60,120,180,240,300].map(a => (
-                <rect key={a} x="47" y="29" width="6" height="10" rx="1.5" transform={`rotate(${a} 50 50)`} fill="currentColor" stroke="none" />
-              ))}
-            </svg>
-          </div>
-        </Parallax>
-
-        <StaggerContainer stagger={0.1} variant="fade-up" className="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-6">
-          {stats.map(({ value, label, icon }) => (
-            <dl key={label} className="group relative bg-surface/80 backdrop-blur-sm border border-rule rounded-xl p-6 text-center transition-all duration-300 hover:border-accent/30 hover:shadow-[0_0_24px_rgba(59,130,246,0.06)]">
-              <div className="w-11 h-11 rounded-lg bg-accent/10 text-accent flex items-center justify-center mx-auto mb-4 transition-transform duration-300 group-hover:scale-110">
-                {icon}
-              </div>
-              <dt className="text-3xl font-bold text-ink mb-1 tracking-tight">{value}</dt>
-              <dd className="text-sm text-muted">{label}</dd>
-            </dl>
-          ))}
-        </StaggerContainer>
+            </div>
+          </Reveal>
+        </div>
       </section>
 
       <TypingSection />

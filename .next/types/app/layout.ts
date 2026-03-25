@@ -1,4 +1,4 @@
-// File: /var/www/autotact-website/app/layout.js
+// File: /home/uniccx/Documents/autotact-website/app/layout.js
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

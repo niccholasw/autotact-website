@@ -8,29 +8,30 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: '#121218',
+        background: 'rgb(var(--c-bg) / <alpha-value>)',
         surface: {
-          DEFAULT: '#1a1a22',
-          2: '#222230',
-          elevated: '#16161e',
-          deep: '#0d0d12',
+          DEFAULT: 'rgb(var(--c-surface) / <alpha-value>)',
+          2: 'rgb(var(--c-surface-2) / <alpha-value>)',
+          elevated: 'rgb(var(--c-surface-el) / <alpha-value>)',
+          deep: 'rgb(var(--c-surface-deep) / <alpha-value>)',
         },
         ink: {
-          DEFAULT: '#f0f0f5',
-          2: '#d4d4dd',
-          3: '#7a7a90',
+          DEFAULT: 'rgb(var(--c-ink) / <alpha-value>)',
+          2: 'rgb(var(--c-ink-2) / <alpha-value>)',
+          3: 'rgb(var(--c-ink-3) / <alpha-value>)',
         },
         accent: {
-          DEFAULT: '#3b82f6',
-          light: 'rgba(59,130,246,0.12)',
-          purple: '#a78bfa',
-          'purple-light': 'rgba(167,139,250,0.12)',
+          DEFAULT: 'rgb(var(--c-accent) / <alpha-value>)',
+          light: 'rgb(var(--c-accent) / 0.12)',
+          purple: 'rgb(var(--c-purple) / <alpha-value>)',
+          'purple-light': 'rgb(var(--c-purple) / 0.12)',
         },
-        rule: '#2a2a36',
-        muted: '#5a5a6e',
+        rule: 'rgb(var(--c-rule) / <alpha-value>)',
+        muted: 'rgb(var(--c-muted) / <alpha-value>)',
+        overlay: 'rgb(var(--c-overlay) / <alpha-value>)',
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-ibm-plex-serif)', 'system-ui', 'sans-serif'],
         heading: ['var(--font-roboto-slab)', 'Georgia', 'serif'],
       },
       boxShadow: {

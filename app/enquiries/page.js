@@ -7,8 +7,9 @@ import Reveal from '../../components/Reveal'
 
 const businessTypes = [
   { value: '', label: 'What kind of business?' },
-  { value: 'tradie', label: 'Tradie' },
+  { value: 'cafe', label: 'Cafe / Hospitality' },
   { value: 'accountant', label: 'Accountant' },
+  { value: 'retail', label: 'Retail' },
   { value: 'other', label: 'Something else' },
 ]
 
@@ -26,10 +27,10 @@ export default function EnquiriesPage() {
     if (!form.email.trim()) {
       e.email = 'We need an email to get back to you.'
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
-      e.email = "That email doesn't look right."
+      e.email = "That email doesn't look right..."
     }
     if (!form.businessType) e.businessType = 'Pick the closest option.'
-    if (!form.message.trim()) e.message = 'A sentence or two is fine — just give us a rough idea.'
+    if (!form.message.trim()) e.message = 'A sentence or two is fine, just give us a rough idea.'
     return e
   }
 
@@ -51,7 +52,7 @@ export default function EnquiriesPage() {
   }
 
   return (
-    <div className="bg-background min-h-screen">
+    <div className="min-h-screen">
       <Navbar />
 
       {/* Hero */}
@@ -86,7 +87,7 @@ export default function EnquiriesPage() {
                 <div className="bg-surface border border-rule rounded-2xl p-14 text-center">
                   <div className="w-14 h-14 rounded-full bg-surface-2 border border-rule flex items-center justify-center mx-auto mb-6">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                      <polyline points="20,6 9,17 4,12" stroke="#3b82f6" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <polyline points="20,6 9,17 4,12" className="stroke-accent" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <h2 className="text-2xl font-bold text-ink mb-3 tracking-tight">Got it, {form.name.split(' ')[0]}.</h2>
@@ -110,7 +111,7 @@ export default function EnquiriesPage() {
                       </label>
                       <input
                         id="name" name="name" type="text" autoComplete="name"
-                        placeholder="Dave Smith"
+                        placeholder="Kevin Nguyen"
                         value={form.name} onChange={handleChange}
                         className="form-input"
                         aria-describedby={errors.name ? 'name-err' : undefined}
@@ -123,7 +124,7 @@ export default function EnquiriesPage() {
                       </label>
                       <input
                         id="email" name="email" type="email" autoComplete="email"
-                        placeholder="dave@plumbingco.co.nz"
+                        placeholder="k.nguyen@baristabros.co.nz"
                         value={form.email} onChange={handleChange}
                         className="form-input"
                         aria-describedby={errors.email ? 'email-err' : undefined}
@@ -168,7 +169,7 @@ export default function EnquiriesPage() {
                     </label>
                     <textarea
                       id="message" name="message" rows={5}
-                      placeholder="E.g. I'm a plumber in Auckland. I spend way too long on invoices each week and I'm always forgetting to follow up on quotes..."
+                      placeholder="E.g. I run a small cafe in Auckland. I spend way too long on invoices each week and I'm always behind on supplier orders..."
                       value={form.message} onChange={handleChange}
                       className="form-input resize-none"
                       aria-describedby={errors.message ? 'msg-err' : undefined}
@@ -205,7 +206,7 @@ export default function EnquiriesPage() {
                   <ul className="space-y-5">
                     {[
                       { label: 'Email', value: 'nic@autotact.co.nz', href: 'mailto:nic@autotact.co.nz' },
-                      { label: 'Phone', value: '+64 9 000 0000', href: 'tel:+6490000000' },
+                      { label: 'Phone', value: '+64 28 8515 0393', href: 'tel:+6490000000' },
                       { label: 'Location', value: 'Auckland, New Zealand', href: null },
                     ].map(({ label, value, href }) => (
                       <li key={label}>

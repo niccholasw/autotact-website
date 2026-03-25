@@ -1,11 +1,12 @@
-import { Inter, Roboto_Slab } from 'next/font/google'
+import { IBM_Plex_Serif, Roboto_Slab } from 'next/font/google'
 import TransitionLayout from '../components/TransitionLayout'
 import './globals.css'
 
-const inter = Inter({
+const ibmPlexSerif = IBM_Plex_Serif({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-inter',
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-ibm-plex-serif',
 })
 
 const robotoSlab = Roboto_Slab({
@@ -20,7 +21,7 @@ export const metadata = {
     'AutoTact sets up invoicing, follow-up, and scheduling automations for Small NZ Businesses. 100% NZ based, live within days.',
   keywords: [
     'AI automation NZ',
-    'tradie admin automation',
+    'cafe admin automation',
     'bookkeeper automation New Zealand',
     'automated invoicing NZ',
     'small business automation Auckland',
@@ -36,7 +37,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en-NZ" className={`${inter.variable} ${robotoSlab.variable}`}>
+    <html lang="en-NZ" className={`${ibmPlexSerif.variable} ${robotoSlab.variable}`} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: `(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}})()` }} />
+      </head>
       <body className="bg-background text-ink antialiased min-h-screen">
         <TransitionLayout>{children}</TransitionLayout>
       </body>

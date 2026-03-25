@@ -6,10 +6,10 @@ import Link from 'next/link'
 const phrases = [
   'writing invoices',
   'chasing late payments',
-  'following up on quotes',
-  'sorting the schedule',
-  'reminding clients',
-  'booking in new jobs',
+  'chasing supplier invoices',
+  'sorting the roster',
+  'reminding customers',
+  'reordering stock',
   'end-of-week admin',
   'texting back and forth',
 ]
@@ -99,7 +99,7 @@ export default function TypingSection() {
           <span
             className="inline-block w-[3px] h-[0.85em] ml-1 rounded-sm align-middle"
             style={{
-              background: 'linear-gradient(135deg, #3b82f6, #a78bfa)',
+              background: 'linear-gradient(135deg, rgb(var(--c-accent)), rgb(var(--c-purple)))',
               opacity: cursorVisible ? 1 : 0,
               transition: 'opacity 0.1s',
               verticalAlign: 'middle',
