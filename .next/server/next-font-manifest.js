@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/home/uniccx/Documents/autotact-website/app/layout\":[\"static/media/e4af272ccee01ff0-s.p.woff2\",\"static/media/a88c13d5f58b71d4-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/var/www/autotact-website/app/layout\":[\"static/media/e4af272ccee01ff0-s.p.woff2\",\"static/media/a88c13d5f58b71d4-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
