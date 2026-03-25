@@ -55,30 +55,15 @@ export default function EnquiriesPage() {
     <div className="min-h-screen">
       <Navbar />
 
-      {/* Hero */}
-      <section className="pt-40 pb-24 dot-pattern">
-        <div className="max-w-4xl mx-auto px-6">
-          <Reveal variant="fade-up" duration={0.7}>
-            <p className="eyebrow mb-7">Get in touch</p>
-          </Reveal>
-          <Reveal variant="scale-fade" duration={1.1} delay={0.15}>
-            <h1 className="text-5xl md:text-6xl font-bold text-ink tracking-tight mb-6 leading-[1.06]">
+      {/* Form + sidebar */}
+      <section className="pt-40 pb-28">
+        <div className="max-w-7xl mx-auto px-6">
+          <Reveal variant="scale-fade" duration={1.1}>
+            <h1 className="text-5xl md:text-6xl font-bold text-ink tracking-tight mb-14 leading-[1.06]">
               Let's have a chat about<br />
               <span className="gradient-text">your week.</span>
             </h1>
           </Reveal>
-          <Reveal variant="fade-up" delay={0.35} duration={0.9}>
-            <p className="text-xl text-ink-3 max-w-lg leading-relaxed">
-              Fill in the form and we'll be in touch within one business day to set up a free
-              20-minute call. No pitch, no hard sell.
-            </p>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* Form + sidebar */}
-      <section className="py-28 border-t border-rule">
-        <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-5 gap-16">
 
             {/* Form */}

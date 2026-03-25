@@ -39,7 +39,7 @@ export default function Navbar() {
       className={clsx(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-500',
         scrolled
-          ? 'bg-background/40 backdrop-blur-2xl border-b border-rule shadow-[0_1px_12px_rgba(0,0,0,0.15)]'
+          ? 'bg-background/85 md:bg-background/40 backdrop-blur-2xl border-b border-rule shadow-[0_1px_12px_rgba(0,0,0,0.15)]'
           : 'bg-transparent border-b border-transparent'
       )}
     >
@@ -124,7 +124,7 @@ export default function Navbar() {
           menuOpen ? 'max-h-80 opacity-100 border-rule' : 'max-h-0 opacity-0 border-transparent'
         )}
       >
-        <div className="bg-background/60 backdrop-blur-2xl px-6 py-5 space-y-1">
+        <div className="bg-background/90 backdrop-blur-2xl px-6 py-5 space-y-1">
           {navLinks.map(({ label, href }, i) => (
             <Link
               key={href}
