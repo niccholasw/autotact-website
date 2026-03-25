@@ -44,7 +44,7 @@ export default function HomePage() {
     <div className="min-h-screen">
       <Navbar />
 
-      {/* Hero — split layout */}
+      {/* Hero -split layout */}
       <section className="relative pt-40 pb-24 overflow-hidden dot-pattern">
         <div
           className="absolute top-0 left-1/4 w-[600px] h-[400px] pointer-events-none"
@@ -53,7 +53,7 @@ export default function HomePage() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
-            {/* Left — copy */}
+            {/* Left -copy */}
             <div>
               <Reveal variant="fade-up" duration={0.7}>
                 <p className="eyebrow mb-6">Built for Small NZ Business Owners</p>
@@ -92,7 +92,7 @@ export default function HomePage() {
               </Reveal>
             </div>
 
-            {/* Right — automation visual with parallax */}
+            {/* Right -automation visual with parallax */}
             <Reveal variant="slide-left" delay={0.3} duration={1.2} className="hidden lg:block">
               <Parallax speed={0.08}>
                 <AutomationVisual />
@@ -137,14 +137,14 @@ export default function HomePage() {
                 Up and running in days
               </h2>
               <p className="text-ink-3 text-lg max-w-lg leading-relaxed">
-                Not months. There's no IT team involved on your side — we sort everything.
+                Not months. There's no IT team involved on your side -we sort everything.
               </p>
             </div>
           </Reveal>
 
           <StaggerContainer stagger={0.12} variant="fade-up" className="grid md:grid-cols-3 gap-px bg-rule">
             {steps.map(({ number, title, description }) => (
-              <div key={number} className="bg-background p-10">
+              <div key={number} className="bg-surface p-10 h-full">
                 <span className="text-6xl font-bold text-surface-2 select-none leading-none font-heading">{number}</span>
                 <h3 className="text-xl font-semibold text-ink mt-5 mb-3 tracking-tight">{title}</h3>
                 <p className="text-ink-3 text-sm leading-relaxed">{description}</p>

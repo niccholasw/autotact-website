@@ -93,7 +93,7 @@ export default function EnquiriesPage() {
                   <h2 className="text-2xl font-bold text-ink mb-3 tracking-tight">Got it, {form.name.split(' ')[0]}.</h2>
                   <p className="text-ink-3 leading-relaxed mb-8">
                     We'll come back to you within one business day to organise a quick call.
-                    Check your inbox — it'll come from nic@autotact.co.nz.
+                    Check your inbox -it'll come from nic@autotact.co.nz.
                   </p>
                   <button
                     onClick={() => { setSubmitted(false); setForm(initialForm) }}

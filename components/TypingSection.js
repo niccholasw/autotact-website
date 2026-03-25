@@ -109,7 +109,7 @@ export default function TypingSection() {
         </div>
 
         <p className="text-ink-3 text-lg max-w-xl mx-auto mb-12 leading-relaxed" {...anim(0.35)}>
-          AutoTact handles it for you — so the hours you used to spend on admin
+          AutoTact handles it for you -so the hours you used to spend on admin
           go back to your actual day.
         </p>
 

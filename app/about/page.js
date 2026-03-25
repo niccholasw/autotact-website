@@ -9,12 +9,12 @@ const values = [
   {
     title: 'We move fast',
     description:
-      "We've had clients go from first call to live automations in 72 hours. There's no lengthy discovery phase or project management overhead — we learn what you need, build it, and get out of your way.",
+      "We've had clients go from first call to live automations in 72 hours. There's no lengthy discovery phase or project management overhead - we learn what you need, build it, and get out of your way.",
   },
   {
     title: 'Plain English, always',
     description:
-      "We don't talk about APIs, webhooks, or workflow orchestration unless you want to. We explain what we're building in terms of your actual day — 'when you close out the till, your end-of-day report goes out automatically.' That's it.",
+      "We don't talk about APIs, webhooks, or workflow orchestration unless you want to. We explain what we're building in terms of your actual day - 'when you close out the till, your end-of-day report goes out automatically.' That's it.",
   },
   {
     title: 'We care if it actually works',
@@ -46,7 +46,7 @@ export default function AboutPage() {
           </Reveal>
           <Reveal variant="fade-up" delay={0.35} duration={0.9}>
             <p className="text-xl text-ink-3 max-w-2xl leading-relaxed">
-              AutoTact started because we kept running into the same story — a cafe owner who made incredible coffee
+              AutoTact started because we kept running into the same story -a cafe owner who made incredible coffee
               but spent every Sunday night at the kitchen table doing admin. A bookkeeper managing ten clients
               who was manually chasing every single payment reminder.
             </p>
@@ -75,7 +75,7 @@ export default function AboutPage() {
               <Reveal variant="fade-up" delay={0.15}>
                 <p className="text-ink-3 leading-relaxed mb-5">
                   We're a small NZ team. We sit down with you, learn how your business actually runs —
-                  not how a textbook says it should — and build something that fits your real workflow.
+                  not how a textbook says it should -and build something that fits your real workflow.
                   Something built around how you work, not the other way around.
                 </p>
               </Reveal>
@@ -93,19 +93,19 @@ export default function AboutPage() {
             <Reveal variant="slide-left" delay={0.2} duration={1.1}>
               <Parallax speed={0.06}>
                 <div className="space-y-px bg-rule rounded-xl overflow-hidden border border-rule">
-                  <div className="bg-background p-8">
+                  <div className="bg-surface p-8">
                     <p className="text-ink-3 text-sm leading-relaxed italic mb-4">
                       "I didn't know anything about automation software. I just told them what was taking up my time,
                       and they sorted it. Now I barely think about invoicing."
                     </p>
-                    <p className="text-sm font-semibold text-ink">Dave T. — Auckland Cafe Owner</p>
+                    <p className="text-sm font-semibold text-ink">Dave T. -Auckland Cafe Owner</p>
                   </div>
-                  <div className="bg-background p-8">
+                  <div className="bg-surface p-8">
                     <p className="text-ink-3 text-sm leading-relaxed italic mb-4">
-                      "As a bookkeeper I was sceptical — I thought I'd need to manage a complicated system.
+                      "As a bookkeeper I was sceptical -I thought I'd need to manage a complicated system.
                       There was nothing to manage. It just worked."
                     </p>
-                    <p className="text-sm font-semibold text-ink">Sarah M. — Wellington Bookkeeper</p>
+                    <p className="text-sm font-semibold text-ink">Sarah M. -Wellington Bookkeeper</p>
                   </div>
                   <div className="bg-surface-deep p-8 flex gap-10">
                     <div>
@@ -134,12 +134,12 @@ export default function AboutPage() {
           <Reveal variant="fade-up">
             <p className="eyebrow mb-6">How we work</p>
             <h2 className="text-3xl md:text-4xl font-bold text-ink mb-16 tracking-tight">
-              Three things we don't compromise on
+              Three things we don't compromise on...
             </h2>
           </Reveal>
           <StaggerContainer stagger={0.12} variant="fade-up" className="grid md:grid-cols-3 gap-px bg-rule">
             {values.map(({ title, description }) => (
-              <article key={title} className="bg-background p-10 card-hover">
+              <article key={title} className="bg-surface p-10 card-hover h-full">
                 <h3 className="text-lg font-semibold text-ink mb-4 tracking-tight">{title}</h3>
                 <p className="text-ink-3 text-sm leading-relaxed">{description}</p>
               </article>
@@ -162,7 +162,7 @@ export default function AboutPage() {
               <Reveal variant="fade-up" delay={0.1}>
                 <p className="text-ink-3 leading-relaxed mb-5">
                   Automation is all we do. We've spent years learning what actually works for small hospitality
-                  businesses and bookkeeping practices in New Zealand — the tools they use, the way their days run,
+                  businesses and bookkeeping practices in New Zealand -the tools they use, the way their days run,
                   the admin that kills their evenings.
                 </p>
               </Reveal>

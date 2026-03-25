@@ -1280,8 +1280,11 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(var(--c-bg) / var(--tw-bg-opacity, 1));
 }
-.bg-background\/95 {
-  background-color: rgb(var(--c-bg) / 0.95);
+.bg-background\/40 {
+  background-color: rgb(var(--c-bg) / 0.4);
+}
+.bg-background\/60 {
+  background-color: rgb(var(--c-bg) / 0.6);
 }
 .bg-ink-2 {
   --tw-bg-opacity: 1;
@@ -1316,12 +1319,6 @@ video {
 .bg-transparent {
   background-color: transparent;
 }
-.bg-background\/40 {
-  background-color: rgb(var(--c-bg) / 0.4);
-}
-.bg-background\/60 {
-  background-color: rgb(var(--c-bg) / 0.6);
-}
 .stroke-accent {
   stroke: rgb(var(--c-accent) / 1);
 }
@@ -1343,6 +1340,9 @@ video {
 }
 .p-8 {
   padding: 2rem;
+}
+.p-20 {
+  padding: 5rem;
 }
 .px-10 {
   padding-left: 2.5rem;
@@ -1600,10 +1600,6 @@ video {
 }
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-.backdrop-blur-xl {
-  --tw-backdrop-blur: blur(24px);
-  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 .backdrop-blur-2xl {
   --tw-backdrop-blur: blur(40px);
